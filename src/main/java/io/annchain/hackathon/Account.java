@@ -1,9 +1,8 @@
 package io.annchain.hackathon;
 
+import org.apache.commons.lang3.StringUtils;
 import org.web3j.crypto.*;
-
 import java.math.BigInteger;
-import java.security.*;
 
 public class Account {
     private BigInteger publicKey;
@@ -27,15 +26,15 @@ public class Account {
 
     public String GetPublicKey() {
         // uncompressed format needs a 04
-        return "04" + String.format("0128d",this.publicKey.toString(16));
+        return "04" + StringUtils.leftPad(this.publicKey.toString(16), 128, '0');
     }
 
     public String GetPrivateKey() {
-        return String.format("0128d",this.privateKey.toString(16));
+        return StringUtils.leftPad(this.privateKey.toString(16), 64, '0');
     }
 
     public String GetAddress() {
-        return this.address;
+        return StringUtils.leftPad(this.address, 40, '0');
     }
 
 //    public static String compressPubKey(BigInteger pubKey) {
