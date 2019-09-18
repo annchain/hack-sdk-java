@@ -16,6 +16,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<spring-kafka.version>2.2.8.RELEASE</spring-kafka.version>
 	</properties>
 
 	<dependencies>
@@ -56,7 +57,16 @@
 			<artifactId>commons-codec</artifactId>
 			<version>1.11</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka</artifactId>
+			<version>${spring-kafka.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.60</version>
+		</dependency>
 	</dependencies>
 
 	<build>

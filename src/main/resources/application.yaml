@@ -1,0 +1,24 @@
+logging:
+  level:
+    root: INFO
+
+app:
+  topic: "hack-final-test"
+
+api:
+  url: "http://47.100.122.212:30020"
+  token: "98765467890"
+
+privkey: "567d6a1f2d5bafae059308d91cb8a5452cb48032bed42a9ff5a601a7bab5e183"
+
+spring:
+  kafka:
+    bootstrap-servers: "47.100.222.11:30000"
+    consumer:
+      enable-auto-commit: false
+      auto-offset-reset: latest
+      auto-commit-interval: 100ms
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      properties:
+        session.timeout.ms: 15000

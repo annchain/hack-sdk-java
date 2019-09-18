@@ -1,7 +1,8 @@
-package io.annchain.hackathon;
+package io.annchain.hackathon.sdk.model;
 
 import org.apache.commons.lang3.StringUtils;
 import org.web3j.crypto.*;
+
 import java.math.BigInteger;
 
 public class Account {
@@ -38,7 +39,7 @@ public class Account {
         return StringUtils.leftPad(this.address, 40, '0');
     }
 
-    public ECKeyPair getKeyPair(){
+    public ECKeyPair getKeyPair() {
         return this.keyPair;
     }
 
