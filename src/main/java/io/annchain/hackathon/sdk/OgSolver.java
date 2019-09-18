@@ -42,7 +42,6 @@ public class OgSolver {
     String post(String path, String json) throws IOException {
         RequestBody body = RequestBody.create(jsonMedia, json);
         Request request = new Request.Builder()
-//                .url("http://ptsv2.com/t/gzl29-1568792694/post")
                 .url(this.url + path)
                 .post(body)
                 .addHeader("cookie", "token=" + this.token)
