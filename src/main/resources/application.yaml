@@ -9,7 +9,7 @@ api:
   url: "http://47.100.122.212:30020"
   token: "98765467890"
 
-privkey: "567d6a1f2d5bafae059308d91cb8a5452cb48032bed42a9ff5a601a7bab5e183"
+privkey: "92d12f7ff94ccecf1f5f61fc0b26b429ba9405bf1acb9ced1c3e9168d9cf6c81"
 
 spring:
   kafka:

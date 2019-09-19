@@ -68,7 +68,7 @@ public class HackathonApplication implements CommandLineRunner {
         tx.setFrom(ogSolver.getAccount().getAddress());
         tx.setTo(null);
         tx.setNonce(qnr.getNonce() + 1);
-        tx.setGuarantee(BigInteger.valueOf(1));
+        tx.setGuarantee(BigInteger.valueOf(2));
         tx.setValue(BigInteger.valueOf(0));
         try {
             ogSolver.sendTx(tx);

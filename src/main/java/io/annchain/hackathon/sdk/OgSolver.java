@@ -134,6 +134,13 @@ public class OgSolver {
         return JSON.parseObject(resp, QuerySequencerResp.class);
     }
 
+    public QueryNextSeqResp queryNextSequencerInfo() throws IOException {
+        String path = "/query_next_seq";
+        String resp = get(path);
+        logger.info("resp: "+ resp);
+        return JSON.parseObject(resp, QueryNextSeqResp.class);
+    }
+
     public QueryTxsResp queryTxsByAddress(String address) throws IOException {
         String path = "/transactions?address=" + address;
         String resp = get(path);

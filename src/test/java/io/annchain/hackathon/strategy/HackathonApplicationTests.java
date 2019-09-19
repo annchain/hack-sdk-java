@@ -63,7 +63,8 @@ public class HackathonApplicationTests {
 //        System.out.println(os.queryTxsByAddress(account.getAddress()));
 //        System.out.println(os.queryTxsByHeight(1980));
 //        System.out.println(os.queryAllTipsInPool());
-        System.out.println(os.queryAllTxsInPool());
+//        System.out.println(os.queryAllTxsInPool());
+        System.out.println(os.queryNextSequencerInfo());
 
     }
 
